@@ -1,0 +1,85 @@
+<template>
+  <div class = "goods-list-item">
+
+    <div class="item-img">
+
+      <img :src = "good.show.img">
+
+    </div>
+    <div class="item-title"><span>{{good.title}}</span></div>
+    <div class="item-info">
+
+      <span>￥{{good.price}}</span>
+      <span>♥{{good.cfav}}</span>
+
+    </div>
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: "GoodsListItem",
+
+  props:{
+
+    good:Object,
+    default:{
+
+      return:{}
+
+    }
+
+  }
+
+}
+</script>
+
+<style scoped>
+
+  .goods-list-item{
+
+    margin-bottom: 5px;
+    width: 46%;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 40px;
+
+  }
+
+  .item-img{
+
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .item-img img{
+
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+  }
+
+  .item-title{
+
+    padding-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+
+  .item-info span:nth-child(1){
+
+    color: #ff8198;
+
+  }
+
+  .item-info span:nth-child(2){
+
+    margin-left: 8px;
+
+  }
+
+</style>
