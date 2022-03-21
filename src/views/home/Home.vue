@@ -82,7 +82,11 @@ export default {
     }
 
   },
+  activated() {
 
+    this.$refs.scroll && this.$refs.scroll.refresh();
+
+  },
   created() {
 
     this.getHomeMultiDataMethod();

@@ -67,7 +67,13 @@
 
       scrollIn(x,y,time = 500){
 
-        this.scroll.scrollTo(x,y,time);
+        this.scroll && this.scroll.scrollTo(x,y,time);
+
+      },
+
+      refresh(){
+
+        this.scroll && this.scroll.refresh();
 
       }
 

@@ -1,19 +1,26 @@
 <template>
-  <div>
+  <div class = "profile">
 
-    <scroll></scroll>
+    <profile-title></profile-title>
+    <profile-account-message></profile-account-message>
+    <profile-select-item/>
 
   </div>
 </template>
 
 <script>
-import Scroll from "components/common/scroll/Scroll";
+
+import ProfileTitle from "./childComps/ProfileTitle";
+import ProfileAccountMessage from "@/views/profile/childComps/ProfileAccountMessage";
+import ProfileSelectItem from "./childComps/ProfileSelectItem";
 
 export default {
   name: "Profile",
   components:{
 
-    Scroll
+    ProfileAccountMessage,
+    ProfileTitle,
+    ProfileSelectItem,
 
   }
 
@@ -21,5 +28,7 @@ export default {
 </script>
 
 <style scoped>
+
+
 
 </style>

@@ -19,4 +19,23 @@ export default {
 
     },
 
+    changeSelectGoods({commit,state},payload) {
+        //
+         console.log(state.cartList.length)
+
+            if (payload == true) {
+
+                commit("notSelectAllGoods");
+
+            }
+             else{
+
+                 commit("selectAllGoods");
+
+            }
+
+
+
+
+    },
 }

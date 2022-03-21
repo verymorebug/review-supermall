@@ -23,7 +23,7 @@ export default {
 
   .tab-bar{
 
-    background: #dedddd;
+    background: #f3f2f2;
     display: flex;
     height: 49px;
     position: fixed;

@@ -39,13 +39,17 @@ export default {
   .nav{
 
     background: #ff5777;
+    z-index: 9;
+    position: relative;
 
   }
 
   .nav-title{
 
+
     text-align: center;
     color: white;
+
 
   }
 
