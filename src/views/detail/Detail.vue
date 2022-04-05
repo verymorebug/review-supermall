@@ -82,7 +82,6 @@ export default {
     this.iid = this.$route.params.iid;
     this.getGoodDetailDataMethod(this.iid);
     this.getShopDetailRecommendMethod();
-    console.log("备重新创建了")
 
   },
 
@@ -133,13 +132,12 @@ export default {
 
     navBarItemClick(index){
 
-      this.$refs.scroll.scrollIn(0,-this.offsetTopYList[index],500);
+      this.$refs.scroll.scrollIn(0,-this.offsetTopYList[index],100);
 
     },
 
     addCart(){
 
-      console.log("加入了购物车");
       const goods = {};
 
       goods.count = 1;

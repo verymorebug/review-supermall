@@ -2,15 +2,13 @@
   <div class = "goods-list-item">
 
     <div class="item-img">
-
-      <img :src = "good.show.img">
-
+      <img :src = "showImg">
     </div>
-    <div class="item-title"><span>{{good.title}}</span></div>
+    <div class="item-title"><span>{{goods.title}}</span></div>
     <div class="item-info">
 
-      <span>￥{{good.price}}</span>
-      <span>♥{{good.cfav}}</span>
+      <span>￥{{goods.price}}</span>
+      <span>♥{{goods.cfav}}</span>
 
     </div>
 
@@ -22,11 +20,16 @@ export default {
   name: "GoodsListItem",
 
   props:{
-
-    good:Object,
+    goods:Object,
     default:{
-
       return:{}
+    }
+  },
+  computed:{
+
+    showImg(){
+
+      return this.goods.img || this.goods.image || this.goods.show.img
 
     }
 

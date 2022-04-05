@@ -10,15 +10,15 @@
 
   </swiper>
 
-<!--  <swiper class = "showSwiper" >-->
+<!--  <slide class = "showSwiper" >-->
 
-<!--    <swiper-item v-for="(item,index) in topImages" :key = "index">-->
+<!--    <slide-item v-for="(item,index) in topImages" :key = "index">-->
 
 <!--      <img :src = "item">-->
 
-<!--    </swiper-item>-->
+<!--    </slide-item>-->
 
-<!--  </swiper>-->
+<!--  </slide>-->
 
 
 

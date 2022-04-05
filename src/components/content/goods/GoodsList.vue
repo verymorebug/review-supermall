@@ -1,7 +1,7 @@
 <template>
   <div class = "goods-list">
 
-    <goods-list-item :good = "item" v-for = "item in goodList" @click = "clickInGoodDetail(item.iid)"></goods-list-item>
+    <goods-list-item :goods = "item" v-for = "item in goodList" :key = "item.iid" @click = "clickInGoodDetail(item.iid)"></goods-list-item>
 
   </div>
 </template>

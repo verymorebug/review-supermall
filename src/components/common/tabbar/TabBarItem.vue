@@ -42,8 +42,6 @@ export default {
 
     clickItem(){
 
-
-      console.log(this.$router.push)
       this.$router.push({path:this.thePath});
 
     },

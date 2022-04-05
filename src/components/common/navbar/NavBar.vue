@@ -30,7 +30,7 @@ export default {
     height: 44px;
     line-height: 44px;
     display: flex;
-    border-bottom: 1px solid rgba(100,100,100,0.1);
+    /*border-bottom: 1px solid rgba(100,100,100,0.1);*/
 
   }
 
